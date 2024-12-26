@@ -1,0 +1,10 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: git-search-algorithm
+    git:
+      host: https://api.github.com
+      search-resource: /search/repositories

@@ -1,0 +1,7 @@
+services:
+  git-search-algorithm:
+    image: git-search-algorithm
+    build:
+      context: /
+    ports:
+      - "8080:8080"
