@@ -5,5 +5,5 @@ Here created a scoring algorithm that assigns a popularity score to each reposit
 To run this application in you local machine,
  
 1. Required docker client installed in your computer 
-2. Open the application root folder in terminal or command prop and run command docker-compose up --build
+2. Open the application root folder in terminal or command prop and run command: docker-compose up --build
 3. API documentation and API can be accessed through swagger: http://localhost:8080/swagger-ui.html
