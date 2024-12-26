@@ -18,7 +18,7 @@ import java.time.Duration;
 import static com.demo.gitsearch.constants.GitSearchApplicationMessages.*;
 
 /**
- * Adapter class to call external git api for searching repository based on given input
+ * Adapter class to call external GIT API for searching repository based on given input
  */
 
 @Service
@@ -36,7 +36,7 @@ public class GitSearchApiAdapterService {
 
 
     /**
-     * Method to call GIT search method to find the repos
+     * Method to call GIT search API to find the repositories based on given query
      *
      * @param query - search query to GIT
      * @return - Response from GIT

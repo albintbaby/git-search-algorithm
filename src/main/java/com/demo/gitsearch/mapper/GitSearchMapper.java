@@ -17,18 +17,18 @@ import java.util.List;
 import static com.demo.gitsearch.constants.GitSearchApplicationConstants.*;
 
 /**
- * Mapper class used to create request and response objects for git search service
+ * Mapper class used to create request and response objects for GIT search service
  */
 
 @UtilityClass
 public class GitSearchMapper {
 
     /**
-     * Create git search query based on input parameters
+     * Create GIT search query based on input parameters
      *
      * @param repository - Search query for the repository
      * @param language   - Programming language for the repository
-     * @return search query for git repository
+     * @return search query for GIT repository
      */
     public String createSearchQuery(String repository, String language) {
         return repository +
@@ -42,7 +42,7 @@ public class GitSearchMapper {
      * Map to Git popularity response object based on the Git search response
      * And sort it based on popularity descending order
      *
-     * @param gitSearchResponse - Search response received from git
+     * @param gitSearchResponse - Search response received from GIT
      * @return popularity response objects
      */
     public Mono<List<GitPopularityResponse>> mapPopularityScore(GitSearchResponse gitSearchResponse) {
@@ -65,11 +65,11 @@ public class GitSearchMapper {
     }
 
     /**
-     * Calculate the popularity score received for the git repository based on input parameters
+     * Calculate the popularity score received for the GIT repository based on input parameters
      *
-     * @param stars       - stars received for git repository
-     * @param forks       - forks created from git repository
-     * @param lastUpdated - last updated date for the git repository
+     * @param stars       - stars received for GIT repository
+     * @param forks       - forks created from GIT repository
+     * @param lastUpdated - last updated date for the GIT repository
      * @return popularity score calculated for the repository
      */
     private BigDecimal calculatePopularityScore(int stars, int forks, Date lastUpdated) {

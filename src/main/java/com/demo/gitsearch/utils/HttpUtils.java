@@ -8,7 +8,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 
 /**
- * HTTP Util class for create URI components and HTTP related operations
+ * HTTP util class for create URI components and HTTP related operations
  */
 
 @UtilityClass
@@ -16,10 +16,10 @@ import java.net.URI;
 public class HttpUtils {
 
     /**
-     * Create a URI object for Git http request
+     * Create a URI object for Git HTTP request
      *
-     * @param apiHost         - the url for api host
-     * @param apiUrl          - the url for the http service
+     * @param apiHost         - the URL for API host
+     * @param apiUrl          - the URL for the HTTP service
      * @param queryParameters - query parameters if any
      * @return the URI object
      */

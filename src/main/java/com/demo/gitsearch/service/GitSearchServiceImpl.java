@@ -15,7 +15,7 @@ import static com.demo.gitsearch.constants.GitSearchApplicationMessages.LOG_ERRO
 import static com.demo.gitsearch.constants.GitSearchApplicationMessages.LOG_MAPPED_POPULARITY_SCORE_RESPONSE_MESSAGE;
 
 /**
- * Service class to perform business logic for git search and map based on popularity
+ * Service class to perform business logic for GIT search and map based on popularity
  */
 
 @Service
@@ -26,7 +26,7 @@ public class GitSearchServiceImpl implements GitSearchService {
     private final GitSearchApiAdapterService gitSearchApiAdapterService;
 
     /**
-     * Service method asses the popularity score for git repository based on stars, forks and date updated
+     * Service method asses the popularity score for GIT repository based on stars, forks and date updated
      * with input parameters containing repository name and programming language for the repository
      *
      * @param repository - Search query for the repository

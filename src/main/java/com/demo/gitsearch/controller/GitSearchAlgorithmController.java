@@ -14,7 +14,7 @@ import reactor.core.publisher.Mono;
 import java.util.List;
 
 /**
- * Controller class to create REST APIS for git related operations
+ * Controller class to create REST APIS for GIT related operations
  */
 
 @RestController
@@ -25,8 +25,15 @@ public class GitSearchAlgorithmController {
 
     private final GitSearchService gitSearchService;
 
+    /**
+     * Rest GET API to find the scoring for the repository based on search query like repository name and language.
+     * 
+     * @param repository - Search query for the repository
+     * @param language   - Programming language for the repository
+     * @return - Response entity object with popularity score
+     */
     @GetMapping("/search")
-    public Mono<ResponseEntity<List<GitPopularityResponse>>> findRepositoryScore(@RequestParam("repository") String repository, @RequestParam("language") String language) {
+    public Mono<ResponseEntity<List<GitPopularityResponse>>> findRepositoryScore(@RequestParam String repository, @RequestParam String language) {
         return gitSearchService.assesPopularityScore(repository, language);
     }
 }
